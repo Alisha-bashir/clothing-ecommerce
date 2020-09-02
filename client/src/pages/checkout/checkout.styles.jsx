@@ -12,6 +12,7 @@ export const CheckoutPageContainer = styled.div`
     margin-left: auto;
     margin-top: 50px;
   }
+  
 `;
 
 export const CheckoutHeaderContainer = styled.div`
@@ -20,6 +21,11 @@ export const CheckoutHeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid darkgrey;
+  @media screen and (max-width: 800px) {
+    display:inline grid;
+    grid-template-columns:1fr 1fr auto 1fr 1fr;
+    grid-gap:5px;
+  }
 `;
 
 export const HeaderBlockContainer = styled.div`
@@ -28,6 +34,10 @@ export const HeaderBlockContainer = styled.div`
 
   &:last-child {
     width: 8%;
+  }
+  @media screen and (max-width: 800px) {
+    width:70%
+    align-items:center
   }
 `;
 
